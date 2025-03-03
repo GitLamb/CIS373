@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Jason Lambert, strayer university, CIS373 012425-->
     <meta charset="utf-8" />
+    <!--Jason Lambert, strayer university, CIS373 012425-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -11,11 +11,50 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!--Internal JavaScript-->
+    <script type = "text/javascript">
+    function getRadioValue(radio) {
+        alert("You Selected: " + radio.value);
+    }
+    function getCheckBoxClick(checkbox) {
+        alert("You Selected: " + checkbox.value);
+    }
+    function getMenuSelection(menu) {
+        alert("You Selected: " + menu.value);
+    }
+    function getTextboxEntry(element) {
+        alert("You Entered: " + element.value);
+    } 
+    </script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .centered-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        /* Remove bullet points if desired */
+        .centered-list ul {
+            list-style-type: none;
+        }
+
+        /* Add some spacing between list items */
+            .centered-list li {
+                margin: 5px 0;
+            }
+
+            .centered-list a {
+                color: rgb(255, 252, 252); /* Change this to your desired color */
+                font-size: 1.8rem;
+            }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -28,8 +67,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#travel hub">Resources</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#road trips">Destinations</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#travel-hub">Resources</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#road-trips">Destinations</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#community">Base</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                 </ul>
@@ -44,7 +83,7 @@
             <h1 class="masthead-heading text-uppercase mb-0">A Travelers Hub</h1>
             <br /><br />
             <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="C:\Users\jlara\source\repos\GitHub\CIS373\Traveller.jpg" alt="A traveller waatching planes take off" />
+            <img class="masthead-avatar mb-5" src="C:/Users/jlara/source/repos/GitHub/CIS373/Traveller.jpg" alt="A traveller waatching planes take off" />
 
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
@@ -56,10 +95,11 @@
             <p class="masthead-subheading font-weight-light mb-0">By Jason Lambert - Student - Strayer University</p>
         </div>
     </header>
-    <!-- Portfolio Section-->
+
+    <!-- A Travelers Hub Section-->
     <section class="page-section portfolio bg-info" id="A Travelers Hub">
         <div class="container">
-            <!-- Portfolio Section Heading-->
+            <!-- A Travelers Hub Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">A Ttravelers Hub</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
@@ -67,20 +107,18 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <p>
-                Embark on a journey of discovery with us. At Traveler Hub, we believe that every adventure starts with a single step.
-                Whether you're a seasoned globetrotter or planning your first getaway, our platform is designed to inspire, guide, and support you every step of the way.
-                Dive into our curated travel guides, insider tips, and vibrant community of fellow explorers. Let's make your travel dreams a reality!
-            </p>
-        </div>
-    </section>
+            <div class="row">
+                <div class="col-lg-4 ms-auto"><p class="lead">TravellersHub is an engaging platform where travelers can share their experiences, find travel inspiration, and access practical tips for their journeys.The site features user-generated content, travel guides, and a supportive community for travel enthusiasts.</p></div>
+                <div class="col-lg-4 me-auto"><p class="lead">TravelTalesHub is a must-visit platform for travelers seeking authentic experiences and practical advice. By offering user-generated content, comprehensive travel guides, and community features, this website makes travel planning easier and more enjoyable.</p></div>
+            </div>
+</section>
     <br />
     <br />
 
-    <!-- Portfolio - Travel Hub Section-->
-    <section class="page-section portfolio" id="travel hub">
+    <!--  Travel Hub Section-->
+    <section class="page-section portfolio" id="travel-hub">
         <div class="container">
-            <!-- Portfolio Section Heading-->
+            <!-- Travel Hub Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Your Hub</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
@@ -88,72 +126,72 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <!-- Portfolio Grid Items-->
+            <!-- Travel Hub Grid Items-->
             <div class="row justify-content-center">
-                <!--Porttfolio modal title-->
+                <!--Travel Hub modal title-->
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Home </h2>
-                <!-- Portfolio Item 1-->
+                <!-- Travel Hub Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="C:\Users\jlara\source\repos\GitHub\CIS373\home.jfif" alt="A Thank you for visiting, come back soon sign" />
+                        <img class="img-fluid" src="C:/Users/jlara/source/repos/GitHub/CIS373/home.jfif" alt="A Thank you for visiting, come back soon sign" />
                     </div>
                 </div>
-                <!--Porttfolio modal title-->
+                <!--Travel hub modal title-->
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Destinations</h2>
-                <!-- Portfolio Item 2-->
+                <!-- Travel hub Item 2-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="C:\Users\jlara\source\repos\GitHub\CIS373\destiinations.jfif" alt="A picture of destination maps to go anywhere." />
+                        <img class="img-fluid" src="C:/Users/jlara/source/repos/GitHub/CIS373/destiinations.jfif" alt="A picture of destination maps to go anywhere." />
                     </div>
                 </div>
-                <!--Porttfolio modal title-->
+                <!--Travel hub modal title-->
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Guides</h2>
-                <!-- Portfolio Item 3-->
+                <!-- Travel hub Item 3-->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="C:\Users\jlara\source\repos\GitHub\CIS373\guides.jfif" alt="Destination guides" />
+                        <img class="img-fluid" src="C:/Users/jlara/source/repos/GitHub/CIS373/guides.jfif" alt="Destination guides" />
                     </div>
                 </div>
-                <!--Porttfolio modal title-->
+                <!--Travel hub modal title-->
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tips</h2>
-                <!-- Portfolio Item 4-->
+                <!-- Travel hub Item 4-->
                 <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="C:\Users\jlara\source\repos\GitHub\CIS373\Travel tips.jfif" alt="Traveling tips to keep you safe..." />
+                        <img class="img-fluid" src="C:/Users/jlara/source/repos/GitHub/CIS373/Travel tips.jfif" alt="Traveling tips to keep you safe..." />
                     </div>
                 </div>
-                <!--Porttfolio modal title-->
+                <!--Travel hub modal title-->
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Community</h2>
-                <!-- Portfolio Item 5-->
+                <!-- Travel hub Item 5-->
                 <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="C:\Users\jlara\source\repos\GitHub\CIS373\Travel community.jfif" alt="A Community that travels together, stays together." />
+                        <img class="img-fluid" src="C:/Users/jlara/source/repos/GitHub/CIS373/Travel community.jfif" alt="A Community that travels together, stays together." />
                     </div>
                 </div>
-                <!--Porttfolio modal title-->
+                <!--Travel hub modal title-->
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Abbout us</h2>
-                <!-- Portfolio Item 6-->
+                <!-- Travel hub Item 6-->
                 <div class="col-md-6 col-lg-4">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="C:\Users\jlara\source\repos\GitHub\CIS373\about us.jfif" alt="A sign about us, thats aboutt us." />
+                        <img class="img-fluid" src="C:/Users/jlara/source/repos/GitHub/CIS373/about us.jfif" alt="A sign about us, thats aboutt us." />
                     </div>
                 </div>
             </div>
@@ -170,10 +208,16 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
+            <p style="font-size: 25px;">Looking to plan your next joruney, well thgen you come to the right place. Check out our recommended tarvel destinations by other tarveler and also what tarvels deals are going on live right now
+            </p>         
             <!-- road trip Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto"><p class="lead">TravellersHub is an engaging platform where travelers can share their experiences, find travel inspiration, and access practical tips for their journeys. The site features user-generated content, travel guides, and a supportive community for travel enthusiasts</p></div>
-                <div class="col-lg-4 me-auto"><p class="lead">TravelTalesHub is a must-visit platform for travelers seeking authentic experiences and practical advice. By offering user-generated content, comprehensive travel guides, and community features, this website makes travel planning easier and more enjoyable.</p></div>
+            <div class="centered-list">
+                <ul>
+                    <li><a href="https://www.viator.com/Swiss-Alps/d5015-ttd?pid=P00075767&mcid=42383&medium=link&campaign=rankings-usnswissalps0general/" alt="Tour De Swiss Alps"><span class="list-text-color">All Swiss Alps Tours & Excursions in 2025</span></a></li>
+                    <li><a href="https://travel.usnews.com/Bora_Bora/" alt="Trip to Bora Bora"><span class="list-text-color">Destination Bora Bora</span></a></li>
+                    <li><a href="https://travel.usnews.com/Rome_Italy/" alt="Trip to Rome"><span class="list-text-color">Next Stop Rome</span></a></li>
+                    <li><a href="https://www.viator.com/Cusco-attractions/Machu-Picchu/d937-a3358?pid=P00075767&mcid=42383&medium=link&campaign=rankings-usnmachupicchu0general" alt="Machu-Picchu"><span class="list-text-color">Tour De Machu Picchu</span></a></li>
+                </ul>
             </div>
             <!-- Road Trip Section Button-->
             <div class="text-center mt-4">
@@ -186,10 +230,10 @@
     </section>
     <br />
     <br />
-    <!-- Home Base Section-->
+    <!-- community Section-->
     <section class="page-section portfolio bg-info" id="community">
         <div class="container">
-            <!-- Portfolio Section Heading-->
+            <!-- community Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Home Base</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
@@ -197,9 +241,14 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-            <p>Welcome to the Destination Page of Traveler Hub! Here, you'll find a treasure trove of information about the world's most captivating destinations. Whether you're dreaming of a tropical paradise, a bustling cityscape, or a serene countryside, we've got you covered. 
-            Our comprehensive guides offer insights into the best attractions, local culture, hidden gems, and travel tips to make your journey unforgettable. 
-            Start exploring now and let Traveler Hub be your trusted companion in planning the perfect getaway! </p>
+            <p style="font-size: 22px;">A place to come after your long travel jorney and unload all your tarveling fun. Upload Pictures, participate in forums, reply to other travelers and share your story.</p>
+        </div>
+        <!-- Community Section Button-->
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="C:\Users\jlara\source\repos\GitLamb\CIS373\community.html">
+                <i class="fas fa-download me-2"></i>
+                Community room and Forums
+            </a>
         </div>
     </section>
     <br />
@@ -226,6 +275,64 @@
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!--The radio buttons are to collect user input-->
+                        <div>
+                            <p><h5>Please select the reason for your inquiry:</h5></p>
+                            <input type="radio" id="general inquiry" name="inquiryType" value="General inquiry" title="General Inquiry"  onchange="getRadioValue(this)">
+                            <label for="general">General Inquiry</label><br>
+                            <input type="radio" id="booking" name="inquiryType" value="booking" title="booking" onchange="getRadioValue(this)">
+                            <label for="booking">Booking</label><br>
+                            <input type="radio" id="feedback" name="inquiryType" value="feedback" title="feedback" onchange="getRadioValue(this)">
+                            <label for="feedback">Feedback</label>
+                        </div>
+                        <!--For check Boxes-->
+                        <div>
+                            <!--onchange "getCheckBox" are ti set alert to the user on the page-->
+                            <p><h5>What services are you interested in?:</h5>
+                            <input type="checkbox" id="flightBooking" name="services" value="flightBooking" onchange="getCheckBoxClick(this)">
+                            <label for="flightBooking">Flight Booking</label><br>
+                            <input type="checkbox" id="hotelBooking" name="services" value="hotelBooking" onchange="getCheckBoxClick(this)">
+                            <label for="hotelBooking">Hotel Booking</label><br>
+                            <input type="checkbox" id="carRental" name="services" value="carRental" onchange="getCheckBoxClick(this)">
+                            <label for="carRental">Car Rental</label><br>
+                            <input type="checkbox" id="tourPackages" name="services" value="tourPackages" onchange="getCheckBoxClick(this)">
+                            <label for="tourPackages">Tour Packages</label><br>
+                            <p><h5>Subscribe to our newsletters:</h5></p> 
+                            <input type="checkbox" id="weeklyNewsLetter" name="newsLetter" value="weekly" onchange="getCheckBoxClick(this)">
+                            <label for="weeklyNewsLetter">Weekly Newsletter</label><br>
+                            <input type="checkbox" id="monthlyNewsletter" name="newsLetter" value="monthly" onchange="getCheckBoxClick(this)">
+                            <label for="monthlyNewsletter">Monthly Newsletter</label><br>
+                            <input type="checkbox" id="specialOffers" name="newsLetter" value="specialOffers" onchange="getCheckBoxClick(this)">
+                            <label for="specialOffers">Special Offers</label>
+                        </div>
+                         <!-- Drop down menu-->
+                        <div>
+                         
+                            <form>
+                              <p><h5>When is the best time to contact you?</h5></p>                       
+                              <label for="contactTime">Preferred contact time:</label>
+                              <select id="contactTime" name="contactTime" id="contactTime"  onchange="getTextboxEntry(this); showOtherTimeInput()">
+                              <option value="morning">Morning (8 AM - 12 PM)</option>
+                              <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                              <option value="evening">Evening (4 PM - 8 PM)</option>
+                              <option value="night">Night (8 PM - 12 AM)</option>
+                              <option value="Other">Other (Enter time)</option>                                         
+                              </select>
+                              <input type="time" id="otherTimeInput" name="otherTime" style="display:none;" placeholder="Enter time" onchange= "getCheckBoxClick(this); showOtherTimeInput()">
+                             </form>    
+                            <script>
+                            function showOtherTimeInput() {
+                                var select = document.getElementById("contactTime");
+                                var otherTimeInput = document.getElementById("otherTimeInput");
+                                if (select.value === "Other") {
+                                    otherTimeInput.style.display = "block";
+                                } else {
+                                    otherTimeInput.style.display = "none";
+                                }
+                            }
+                            </script>
+                            </form>
+                        </div>
                         <!-- Name input-->
                         <div class="form-floating mb-3">
                             <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -247,7 +354,8 @@
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
@@ -291,10 +399,10 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="Facebook"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="Twitter"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="Dribbble"><i class="fab fa-fw fa-dribbble"></i></a>
                 </div>
                 <!-- Footer About Text-->
                 <div class="col-lg-4">
@@ -331,7 +439,7 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="C:\Users\jlara\source\repos\GitHub\CIS373\home.jfif" alt="A Thank you for visiting, come back soon sign" />
+                                <img class="img-fluid rounded mb-5" src="C:/Users/jlara/source/repos/GitHub/CIS373/home.jfif" alt="A Thank you for visiting, come back soon sign" />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">Discover a world of adventure and convenience with Travellers Hub, your ultimate travel companion. Whether you're planning a weekend getaway or a month-long expedition, we're here to make your journey unforgettable. Explore breathtaking destinations, find the best travel deals, and access all the resources you need to travel with confidence. Join our community of passionate travelers and start your adventure today!</p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -363,7 +471,7 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="C:\Users\jlara\source\repos\GitHub\CIS373\destiinations.jfif" alt="Destination guides" />
+                                <img class="img-fluid rounded mb-5" src="C:/Users/jlara/source/repos/GitHub/CIS373/destiinations.jfif" alt="Destination guides" />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">Welcome to the Destinations page, where your next adventure awaits! Explore a world of possibilities with our curated list of stunning travel destinations. From bustling cities to serene landscapes, each destination offers unique experiences and unforgettable memories. Dive into our detailed guides to learn about the best attractions, local cuisine, cultural highlights, and hidden gems. Whether you're seeking adventure, relaxation, or cultural immersion, our Destinations page is your gateway to discovering the perfect place for your next journey. Start exploring and let your wanderlust lead the way!</p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -395,7 +503,7 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="C:\Users\jlara\source\repos\GitHub\CIS373\guides.jfif" alt="Lives Guides.too talk to" />
+                                <img class="img-fluid rounded mb-5" src="C:/Users/jlara/source/repos/GitHub/CIS373/guides.jfif" alt="Lives Guides.too talk to" />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">Welcome to the Guides page, your go-to resource for all things travel! Here, you'll find comprehensive guides to help you navigate your next adventure with ease. From detailed destination overviews to insider tips and local secrets, our guides are designed to provide you with all the information you need to make the most of your trip. Whether you're a seasoned traveler or embarking on your first journey, our expertly curated content will inspire and inform every step of the way. Dive in and start exploring.</p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -427,7 +535,7 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="C:\Users\jlara\source\repos\GitHub\CIS373\Travel tips.jfif" alt="Traveling tips to keep you safe..." />
+                                <img class="img-fluid rounded mb-5" src="C:/Users/jlara/source/repos/GitHub/CIS373/Travel tips.jfif" alt="Traveling tips to keep you safe..." />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">Navigate your travels like a pro with our expert travel tips! Whether you're looking for packing hacks, safety advice, or ways to save money on the road, our Travel Tips page has you covered. Our collection of practical tips and tricks is designed to help you travel smarter and more efficiently. From seasoned globetrotters to first-time explorers, everyone can benefit from our insights. Start exploring our tips today and make your next trip smoother and more enjoyable.</p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -459,7 +567,7 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="C:\Users\jlara\source\repos\GitHub\CIS373\Travel community.jfif" alt="A Community that travels together, stays together." />
+                                <img class="img-fluid rounded mb-5" src="C:/Users/jlara/source/repos/GitHub/CIS373/Travel community.jfif" alt="A Community that travels together, stays together." />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">Welcome to the Community page, where travelers from around the world come together! Connect with fellow adventurers, share your travel stories, and gain insights from others' experiences. Our vibrant community is here to support and inspire you on your journey. Whether you're looking for travel buddies, seeking advice, or simply want to share your latest adventure, you'll find a welcoming space here. Join the conversation, make new friends, and become a part of our global travel family. Let's explore the world together.</p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -491,7 +599,7 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="C:\Users\jlara\source\repos\GitHub\CIS373\about us.jfif" alt="A sign about us, thats aboutt us." />
+                                <img class="img-fluid rounded mb-5" src="C:/Users/jlara/source/repos/GitHub/CIS373/about us.jfif" alt="A sign about us, thats aboutt us." />
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4">Our mission at Travellers Hub is to inspire and empower travelers to explore the world with confidence and ease. We strive to provide the best resources, tools, and support to make every journey unforgettable. Whether you're a seasoned traveler or just starting your adventure, we're here to help you discover new destinations, connect with fellow travelers, and create lasting memories. Together, let's make travel dreams a reality.</p>
                                 <button class="btn btn-primary" data-bs-dismiss="modal">
