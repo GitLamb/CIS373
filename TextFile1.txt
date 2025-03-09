@@ -1,0 +1,4 @@
+travel-hub">Resources - A hub of all Travcel Hubs Resources.
+road trips">Destinations - The destinations page where you go to plan a new jorney
+community">Base - Home Base, is where na Traveler can post about there trip, read other post and contribute to other discuession 
+contact">Contact - Thsi is how you would contact support, commit on the site, or request other services. 

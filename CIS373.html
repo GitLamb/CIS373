@@ -40,10 +40,10 @@
             text-align: left;
         }
 
-        /* Remove bullet points if desired */
+        /* Remove bullet points if desired 
         .centered-list ul {
             list-style-type: none;
-        }
+        }*/
 
         /* Add some spacing between list items */
             .centered-list li {
@@ -54,7 +54,48 @@
                 color: rgb(255, 252, 252); /* Change this to your desired color */
                 font-size: 1.8rem;
             }
+            .submit-button  {
+                background-color: #fa0a0a; /* Green */
+                border: 5px dashed;
+                color: rgb(254, 239, 22);
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                opacity: 0.6;
+                transition: 0.3s;
+            }
     </style>
+    <script type = "text/javascript">
+    function validateForm() {
+        let x1 = document.forms["contactForm"]["name"].value;
+        if (x1 == "")   {
+            alert("Name must be filled out");
+            return false;
+        }
+        let x2 = document.forms["contactForm"]["email"].value;
+        if (x2 == "")   {
+            alert("Email must be filled out");
+            return false;
+        }
+        let x3 = document.forms["contactForm"]["phone"].value;
+        if (x3 == "")   {
+            alert("Phone number must be filled out");
+            return false;
+        }
+        let x4 = document.forms["contactForm"]["message"].value;
+        if (x4 == "")   {
+            alert("Message must be filled out");
+            return false;
+        }
+    }
+    function getRadioValue(radio) {
+    }
+    // Duplicate function removed
+    </script>
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -274,7 +315,7 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form id="contactForm" action="mailto:customgradesolutions@gmail.com?subject=request%20for%20information"  onsubmit="return validateForm()" method="post">
                         <!--The radio buttons are to collect user input-->
                         <div>
                             <p><h5>Please select the reason for your inquiry:</h5></p>
@@ -308,10 +349,9 @@
                          <!-- Drop down menu-->
                         <div>
                          
-                            <form>
-                              <p><h5>When is the best time to contact you?</h5></p>                       
+                            <!-- Removed nested form tag -->
                               <label for="contactTime">Preferred contact time:</label>
-                              <select id="contactTime" name="contactTime" id="contactTime"  onchange="getTextboxEntry(this); showOtherTimeInput()">
+                              <select id="contactTime" name="contactTime" onchange="getTextboxEntry(this); showOtherTimeInput()">
                               <option value="morning">Morning (8 AM - 12 PM)</option>
                               <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
                               <option value="evening">Evening (4 PM - 8 PM)</option>
@@ -319,7 +359,6 @@
                               <option value="Other">Other (Enter time)</option>                                         
                               </select>
                               <input type="time" id="otherTimeInput" name="otherTime" style="display:none;" placeholder="Enter time" onchange= "getCheckBoxClick(this); showOtherTimeInput()">
-                             </form>    
                             <script>
                             function showOtherTimeInput() {
                                 var select = document.getElementById("contactTime");
@@ -331,30 +370,29 @@
                                 }
                             }
                             </script>
-                            </form>
                         </div>
                         <!-- Name input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
                             <label for="name">Full name</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                             <label for="email">Email address</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <!-- Phone number input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                             <label for="phone">Phone number</label>
                             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
 
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
@@ -375,9 +413,11 @@
                         <!---->
                         <!-- This is what your users will see when there is-->
                         <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
                         <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        <input type="submit" class="btn btn-primary btn-xl submit-button" value="Send Instructor an email"  title="Submit the form"/>
                     </form>
                 </div>
             </div>
