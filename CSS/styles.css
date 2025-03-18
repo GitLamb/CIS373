@@ -322,8 +322,8 @@ caption {
 }
 
 th {
-  text-align: inherit;
   text-align: -webkit-match-parent;
+  text-align: inherit;
 }
 
 thead,
@@ -332,7 +332,7 @@ tfoot,
 tr,
 td,
 th {
-  border-color: inherit;
+  border-color: green;
   border-style: solid;
   border-width: 0;
 }
@@ -1765,7 +1765,7 @@ progress {
   vertical-align: inherit;
 }
 .table > thead {
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .table-group-divider {
