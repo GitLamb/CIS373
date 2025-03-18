@@ -1,0 +1,53 @@
+<style>
+        .caption {
+            caption-side:top;
+            text-align: center;
+            font-size: 25px;
+            color: rgb(10, 191, 133);
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table, th, td {
+            border: 1px solid rgb(3, 19, 245);
+            font-size: 15px;
+            padding: 5px;
+        }
+        .centered-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+        }
+
+        /* Remove bullet points if desired 
+        .centered-list ul {
+            list-style-type: none;
+        }*/
+
+        /* Add some spacing between list items */
+            .centered-list li {
+                margin: 5px 0;
+            }
+
+            .centered-list a {
+                color: rgb(255, 252, 252); /* Change this to your desired color */
+                font-size: 1.8rem;
+            }
+            .submit-button  {
+                background-color: #fa0a0a; /* Green */
+                border: 5px dashed;
+                color: rgb(254, 239, 22);
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                opacity: 0.6;
+                transition: 0.3s;
+            }
+                    
+</style>

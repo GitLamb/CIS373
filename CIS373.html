@@ -11,91 +11,22 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!--Internal JavaScript-->
-    <script type = "text/javascript">
-    function getRadioValue(radio) {
-        alert("You Selected: " + radio.value);
-    }
-    function getCheckBoxClick(checkbox) {
-        alert("You Selected: " + checkbox.value);
-    }
-    function getMenuSelection(menu) {
-        alert("You Selected: " + menu.value);
-    }
-    function getTextboxEntry(element) {
-        alert("You Entered: " + element.value);
-    } 
-    </script>
+    
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-    <style>
-        .centered-list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: left;
-        }
-
-        /* Remove bullet points if desired 
-        .centered-list ul {
-            list-style-type: none;
-        }*/
-
-        /* Add some spacing between list items */
-            .centered-list li {
-                margin: 5px 0;
-            }
-
-            .centered-list a {
-                color: rgb(255, 252, 252); /* Change this to your desired color */
-                font-size: 1.8rem;
-            }
-            .submit-button  {
-                background-color: #fa0a0a; /* Green */
-                border: 5px dashed;
-                color: rgb(254, 239, 22);
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                opacity: 0.6;
-                transition: 0.3s;
-            }
+    <link href="css/CIS373.css" rel="stylesheet">
+    <!--Internal CSS-->
+    <style>        
     </style>
-    <script type = "text/javascript">
-    function validateForm() {
-        let x1 = document.forms["contactForm"]["name"].value;
-        if (x1 == "")   {
-            alert("Name must be filled out");
-            return false;
-        }
-        let x2 = document.forms["contactForm"]["email"].value;
-        if (x2 == "")   {
-            alert("Email must be filled out");
-            return false;
-        }
-        let x3 = document.forms["contactForm"]["phone"].value;
-        if (x3 == "")   {
-            alert("Phone number must be filled out");
-            return false;
-        }
-        let x4 = document.forms["contactForm"]["message"].value;
-        if (x4 == "")   {
-            alert("Message must be filled out");
-            return false;
-        }
-    }
-    function getRadioValue(radio) {
-    }
-    // Duplicate function removed
-    </script>
+    <!--Internal JavaScript-->
+   <script>
+
+   </script>
+        
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -271,6 +202,48 @@
     </section>
     <br />
     <br />
+    <div>
+        <table class="center">
+            <caption class="caption">Accommodation Options</caption>
+            <tr>
+                <th>Accommodation</th>
+                <th>Location</th>
+                <th>Type</th>
+                <th>Price Range</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>Hotel Sunshine</td>
+                <td>Paris</td>
+                <td>Hotel</td>
+                <td>$100-$200 a night</td>
+                <td style="text-align: center;">4.5/5</td>
+            </tr>
+            <tr>
+                <td>Sakura Hotel</td>
+                <td>Tokyo</td>
+                <td>Hostel</td>
+                <td>$30-$50 a night</td>
+                <td style="text-align: center;">4.2/5</td>
+            </tr>
+            <tr>
+                <td>Central Apartment</td>
+                <td>New York City</td>
+                <td>Apartment</td>
+                <td>$150-$300 a night</td>
+                <td style="text-align: center;">4.7/5</td>
+            </tr>
+            <tr>
+                <td>Beachside Resort</td>
+                <td>Sydney</td>
+                <td>Resort</td>
+                <td>$200-$400 a night</td>
+                <td style="text-align: center;">4.8/5</td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <br />
     <!-- community Section-->
     <section class="page-section portfolio bg-info" id="community">
         <div class="container">
@@ -439,17 +412,17 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="Facebook"><i class="fab fa-fw fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="Twitter"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="#!" title="Dribbble"><i class="fab fa-fw fa-dribbble"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://facebook.com/phullpackage82"><title="Facebook"><i class="fab fa-fw fa-facebook-f"></title></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/jlaraylamb82"><title="Twitter"><i class="fab fa-fw fa-twitter"></title></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jason-lambert-46142a44/"><title="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></title></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://Instagram.com/phullpackage82"><title="Instagram"><i class="fab fa-fw fa-instagram"></title></i></a>
                 </div>
                 <!-- Footer About Text-->
                 <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <h4 class="text-uppercase mb-4">About Travelers Hub</h4>
                     <p class="lead mb-0">
-                        Freelance is a free to use, MIT licensed Bootstrap theme created by
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        Travelers Hub is a social engagement website, that is maintained by KGS, but is mostly run by the users.
+                        <a href="http://atravelershub.com">Main Site</a>
                         .
                     </p>
                 </div>
@@ -458,7 +431,7 @@
     </footer>
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; A Travellers Hub</small></div>
+        <div class="container"><small>Jay Lambert &copy; March 2025</small></div>
     </div>
     <!-- Portfolio Modals-->
     <!-- Portfolio Modal 1-->
@@ -662,5 +635,6 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="js/cis373.js"></script>
 </body>
 </html>
